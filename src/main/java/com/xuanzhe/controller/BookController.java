@@ -22,4 +22,14 @@ public class BookController {
     model.addAttribute("Allbooks",list);
     return "allbooks";
   }
+  @RequestMapping("/toaddbook")
+  public String addPage(){
+    return "addbook";
+  }
+
+  @RequestMapping("/addbook")
+  public String addBook(Books books){
+    bookService.addBook(books);
+    return "redirect:/book/allbooks";
+  }
 }

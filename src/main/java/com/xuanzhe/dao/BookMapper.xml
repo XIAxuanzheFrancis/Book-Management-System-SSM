@@ -4,7 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xuanzhe.dao.BookMapper">
   <insert id="addBook" parameterType="Books">
-    insert into ssmbibliotheque.books (bookName,bookCounts,details) values (#{bookName},#{bookCounts},#{detail});
+    insert into ssmbibliotheque.books (bookName,bookCounts,detail) values (#{bookName},#{bookCounts},#{detail});
   </insert>
   
   <delete id="deleteBookById" parameterType="int">
