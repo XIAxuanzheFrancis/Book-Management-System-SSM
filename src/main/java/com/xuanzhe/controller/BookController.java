@@ -19,7 +19,7 @@ public class BookController {
   @RequestMapping("/allbooks")
   public String findAllBooks(Model model){
     List<Books> list = bookService.queryAllBook();
-    model.addAttribute("Allbooks","list");
+    model.addAttribute("Allbooks",list);
     return "allbooks";
   }
 }

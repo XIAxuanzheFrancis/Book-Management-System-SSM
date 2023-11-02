@@ -18,7 +18,7 @@
   </update>
   
   <select id="queryBookById" resultType="Books">
-    selet * from ssmbibliotheque.books where bookId = #{bookId};
+    select * from ssmbibliotheque.books where bookId = #{bookId};
   </select>
   
   <select id="queryAllBook" resultType="Books">

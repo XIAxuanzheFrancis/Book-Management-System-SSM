@@ -11,6 +11,6 @@
     <title>List de livres</title>
 </head>
 <body>
-    ${list}
+    ${Allbooks}
 </body>
 </html>
