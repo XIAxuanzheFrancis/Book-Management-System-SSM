@@ -10,4 +10,5 @@ public interface BookMapper {
   public int updateBook(Books books);
   public Books queryBookById(int id);
   public List<Books> queryAllBook();
+  public List<Books> queryBookByName(String BookName);
 }

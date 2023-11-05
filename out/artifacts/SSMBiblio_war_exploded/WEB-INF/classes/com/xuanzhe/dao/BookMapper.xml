@@ -24,4 +24,10 @@
   <select id="queryAllBook" resultType="Books">
     select * from ssmbibliotheque.books;
   </select>
+
+  <select id="queryBookByName" resultType="Books">
+    select * from ssmbibliotheque.books where BookName like CONCAT('%', #{BookName}, '%');
+  </select>
+
+
 </mapper>
