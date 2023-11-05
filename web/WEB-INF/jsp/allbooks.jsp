@@ -39,6 +39,7 @@
                             <th>Name of book</th>
                             <th>Number of the book</th>
                             <th>Book Details</th>
+                            <th>manipulate</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,6 +49,11 @@
                             <td>${book.bookName}</td>
                             <td>${book.bookCounts}</td>
                             <td>${book.detail}</td>
+                            <td>
+                                <a href="${pageContext.request.contextPath}/book/tomodify/${book.bookId}">Modify</a>
+                                &nbsp; | &nbsp;
+                                <a href="${pageContext.request.contextPath}/book/deleteBooks/${book.bookId}">Delete</a>
+                            </td>
                         </tr>
                     </c:forEach>
                     </tbody>

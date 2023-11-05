@@ -8,7 +8,7 @@
   </insert>
   
   <delete id="deleteBookById" parameterType="int">
-    delete from ssmbibliotheque.books where bookID = #{bookId};
+    delete from ssmbibliotheque.books where bookId = #{bookId};
   </delete>
 
   <update id="updateBook" parameterType="Books">
